@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Parrilla | Ubicacion</title>
+    <title>La Pulperia de B&C</title>
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="shortcut icon" href="./images/favicon.ico">
 </head>
 <body>
     <div class="GridUbicacion">
-        <header>
-            <h1> LA PARRILLA DE BETO & CLAU</h1> <!-- Comentario: Titulo de la pagina--> 
-            <ul> <!-- esto ese usa para abrir un listado de items-->
-                <li> <!-- esto es para crear un item de esa lista-->
-                <a href="../index.html?"><Button>Inicio</Button></a> 
-                </li>
-                <li><a href="../pages/ubicacion.html"><button>Ubicacion</button></a></li>
-                <li><a href="../pages/menu.html"><button>Menu</button></a></li>
-                <li><a href="../pages/contacto.html"><button>Contacto</button></a></li>
-                <li><a href="../pages/galeria.html"><button>Galeria</button></a></li>
-            
-            </ul> 
-        </header>
-        <h1>Nos encontramos aqui</h1>
-        <iframe clas="MapaUbicacion" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3892.8762321219365!2d-56.17896608115778!3d-34.86864640477979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x439188b1dfdbe69c!2sLa%20Pulper%C3%ADa%20de%20Beto!5e0!3m2!1ses-419!2suy!4v1656990460218!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        <header class="TituloBotonesUbi">
+            <div class="ContenedorLogoUbi"><img class="Logo" src="../images/logo.jpeg" alt="logo"></div>
+            <h1 class="titulo">LA PULPERIA DE BETO & CLAU</h1> <!-- Comentario: Titulo de la pagina--> 
+        
+        
+            <div class="Botones">
+                    <a href="../index.html"><BUtton>Inicio</BUtton></a>
+                    <a href="./ubicacion.html"><button>Ubicacion</button>
+                    <a href="./menu.html"><button>Menu</button></a>
+                    <a href="./contacto.html"><button>Contacto</button></a>
+                    <a href="./galeria.html"><button>Galeria</button></a>
+            </div> 
+         </header>
 
-        <footer class="BotonPedido"> <a href="../pages/pedido.html"><button>HACE TU PEDIDO!</button></a></footer>
+        <div class="ContenidoUbi">
+            <h1>Nos encontramos aqui</h1>
+            <div class="Mapa"><iframe clas="MapaUbicacion" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3892.8762321219365!2d-56.17896608115778!3d-34.86864640477979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x439188b1dfdbe69c!2sLa%20Pulper%C3%ADa%20de%20Beto!5e0!3m2!1ses-419!2suy!4v1656990460218!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+
+        <footer class="BotonPedidoUbi"> <a href="../pages/pedido.html"><button>HACE TU PEDIDO!</button></a></footer>
     </div>  
 </body>
 </html>

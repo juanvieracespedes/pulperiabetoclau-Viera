@@ -4,50 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>La Parrilla</title>
-    <link rel="stylesheet" href="./css/estilosgrid.css">
+    <title>La Pulperia de B&C</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="./images/favicon.ico">
 </head>
+<style>
+    .titulo {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        color: white;
+        text-shadow: -1px -1px 0 rgb(0, 0, 0),  
+         1px -1px 0 rgb(0, 0, 0),
+        -1px 1px 0 rgb(0, 0, 0),
+        1px 1px 0 rgb(0, 0, 0);
+    }
+    
+    .logo{
+        width: 200px;
+        height: 200px;
+    }
+
+    .fondologo {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
 <body>
-    <div class="GridIndex">
+    <div class="container">
     
         <header class="TituloBotones">
-            <h1 class="titulo"> LA PARRILLA DE BETO & CLAU</h1> <!-- Comentario: Titulo de la pagina--> 
+            <div class="fondologo -xxl"><img class="logo" src="./images/logo.jpeg" alt="logo"></div>
+            <h1 class="titulo">LA PULPERIA DE BETO & CLAU</h1> <!-- Comentario: Titulo de la pagina--> 
         
         
-            <nav class="Botones">
-                <ul> <!-- esto ese usa para abrir un listado de items-->
-                    <li class="lista"> <!-- esto es para crear un item de esa lista--><a href="file:///C:/Users/jviera/Desktop/desafio/index.html?"><BUtton>Inicio</BUtton></a></li>
-                    <li class="lista"><a href="./pages/ubicacion.html"><button>Ubicacion</button></a></li>
-                    <li class="lista"><a href="./pages/menu.html"><button>Menu</button></a></li>
-                    <li class="lista"><a href="./pages/contacto.html"><button>Contacto</button></a></li>
-                    <li class="lista"><a href="./pages/galeria.html"><button>Galeria</button></a></li>
-                </ul>
-            </nav> 
+            <div class="row">
+                    <a class="col" href="./index.html"><BUtton>Inicio</BUtton></a>
+                    <a class="col" href="./pages/ubicacion.html"><button>Ubicacion</button>
+                    <a class="col" href="./pages/menu.html"><button>Menu</button></a>
+                    <a class="col" href="./pages/contacto.html"><button>Contacto</button></a>
+                    <a class="col" href="./pages/galeria.html"><button>Galeria</button></a>
+            </div> 
          </header>
 
-        <main class="CentroIndex">
+        <div class="CentroIndex">
         
 
             <img class="ImagenIndex" src="https://heraldodemexico.com.mx/u/fotografias/m/2020/5/1/f925x521-211600_280464_5050.jpg" alt="asado"> <!-- esto seria para poder añadir una imagen-->
         
 
-            <p class="MensajeIndex">
-            La Parrilla de Beto & Clau es el lugar donde las 3 mejores cosas de salir a comer se juntan: <br> 
-
-            Un servicio amable y atento <br> <!-- con esta etiqueta podemos saltar de linea en un parrafo-->
-
-            Un lugar sencillo y ambiente familiar <br>
-
-            Comida riquisima y hecha en el momento <br>
-
-            </p>
+            <h2 clas="FraseFija">Aqui encontrarás 3 cosas:</h2>
+            <h2 class="PrimerCosa">Comida hecha con pasión y por nosotros mismos</h2>
+            <h2 class="SegundaCosa">Dedicacion para nuestros clientes</h2>
+            <h2 class="TercerCosa">Y por ultimo, ganas de que vuelvas!</h2>
 
 
     
-        </main>
+        </div>
     
         <footer class="BotonPedido"> <a href="./pages/pedido.html"><button>HACE TU PEDIDO!</button></a></footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
