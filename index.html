@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="./images/favicon.ico">
 </head>
 <style>
+    body{
+        background: linear-gradient(rgb(0, 0, 0), rgb(252, 151, 56)) no-repeat center fixed;
+        background-size: cover;
+    }
     .titulo {
         display: flex;
         justify-content: center;
@@ -31,35 +35,105 @@
         justify-content: center;
         align-items: center;
     }
+
+    .conteinerCent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CentroIndex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .frase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20 px;
+        text-shadow: -1px -1px 0 rgb(0, 0, 0),  
+         1px -1px 0 rgb(0, 0, 0),
+        -1px 1px 0 rgb(0, 0, 0),
+        1px 1px 0 rgb(0, 0, 0);
+    }
+    
+    .BotonPedido{
+        display: flex;
+        justify-content: center;
+        align-items: center;;
+
+    }
+    p{
+        font-size: 25px;
+    }
+
+    .nav-link:hover{
+        background-color: chocolate;
+    }
 </style>
 
 <body>
-    <div class="container">
+    <div class="container" style="background-color: rgb(247, 186, 130);">
     
         <header class="TituloBotones">
             <div class="fondologo -xxl"><img class="logo" src="./images/logo.jpeg" alt="logo"></div>
             <h1 class="titulo">LA PULPERIA DE BETO & CLAU</h1> <!-- Comentario: Titulo de la pagina--> 
         
         
-            <div class="row">
-                    <a class="col" href="./index.html"><BUtton>Inicio</BUtton></a>
-                    <a class="col" href="./pages/ubicacion.html"><button>Ubicacion</button>
-                    <a class="col" href="./pages/menu.html"><button>Menu</button></a>
-                    <a class="col" href="./pages/contacto.html"><button>Contacto</button></a>
-                    <a class="col" href="./pages/galeria.html"><button>Galeria</button></a>
-            </div> 
+            <ul class="nav nav-tabs" >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html" style="background-color: black; color: white;" >Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/ubicacion.html" style="color: black;">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/menu.html" style="color: black";>Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/galeria.html" style="color: black">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html" style="color: black">Contacto</a>
+                  </li>
+              </ul>
          </header>
 
-        <div class="CentroIndex">
+        <div class="conteiner">
         
 
-            <img class="ImagenIndex" src="https://heraldodemexico.com.mx/u/fotografias/m/2020/5/1/f925x521-211600_280464_5050.jpg" alt="asado"> <!-- esto seria para poder añadir una imagen-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/asado.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/chorizo.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/fritas.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         
 
-            <h2 clas="FraseFija">Aqui encontrarás 3 cosas:</h2>
-            <h2 class="PrimerCosa">Comida hecha con pasión y por nosotros mismos</h2>
-            <h2 class="SegundaCosa">Dedicacion para nuestros clientes</h2>
-            <h2 class="TercerCosa">Y por ultimo, ganas de que vuelvas!</h2>
+            <div class="frase">
+                <p>Aqui encontrarás 3 cosas: <br>
+                Comida hecha con pasión y por nosotros mismos <br>
+                Dedicacion para nuestros clientes <br>
+                Y por ultimo, ganas de que vuelvas!</p>
+            </div>
 
 
     
