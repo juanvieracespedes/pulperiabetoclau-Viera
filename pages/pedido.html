@@ -5,50 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Paulperia | Arma tu pedido</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/favicon.ico">
 </head>
 <body>
-    <div class="GridPedido">
+    <style>
+        body{
+            background: linear-gradient(rgb(0, 0, 0), rgb(252, 151, 56)) no-repeat center fixed;
+            background-size: cover;
+        }
+        .titulo {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+            text-shadow: -1px -1px 0 rgb(0, 0, 0),  
+             1px -1px 0 rgb(0, 0, 0),
+            -1px 1px 0 rgb(0, 0, 0),
+            1px 1px 0 rgb(0, 0, 0);
+        }
+        
+        .logo{
+            width: 200px;
+            height: 200px;
+        }
     
-        <header class="TituloBotonesPedido">
-            <div class="ContenedorLogoPedido"><img class="Logo" src="../images/logo.jpeg" alt="logo"></div>
-            <h1 class="titulo">LA PULPERIA DE BETO & CLAU</h1> <!-- Comentario: Titulo de la pagina--> 
+        .fondologo {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-link:hover{
+            background-color: chocolate;
+        }
+        .BotonPedido{
+            display: flex;
+            justify-content: center;
+            align-items: center;;
+    
+        }
+        h1{
+            font-size: 20 px;
+            text-shadow: -1px -1px 0 rgb(0, 0, 0),  
+             1px -1px 0 rgb(0, 0, 0),
+            -1px 1px 0 rgb(0, 0, 0),
+            1px 1px 0 rgb(0, 0, 0);
+        }
+
+        p{
+            font-size: 30px;
+        }
+    </style>
+        <div class="container" style="background-color: rgb(247, 186, 130);">
         
-        
-            <div class="Botones">
-                    <a href="../index.html"><BUtton>Inicio</BUtton></a>
-                    <a href="./ubicacion.html"><button>Ubicacion</button>
-                    <a href="./menu.html"><button>Menu</button></a>
-                    <a href="./contacto.html"><button>Contacto</button></a>
-                    <a href="./galeria.html"><button>Galeria</button></a>
-            </div> 
-         </header>
+            <header class="TituloBotones">
+                <div class="fondologo -xxl"><img class="logo" src="../images/logo.jpeg" alt="logo"></div>
+                    <h1 class="titulo">LA PULPERIA DE BETO & CLAU</h1> <!-- Comentario: Titulo de la pagina--> 
+                    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: orange;">
+                        <div class="container-fluid" style="color: orange;">
+                          <a class="navbar-brand" href="./index.html" style="color: black"></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" href="../pages/menu.html">Menu</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                              </li>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="../pages/ubicacion.html">Ubicacion</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                 </header>
         <h1>ARMA TU PEDIDO</h1>
         <main>
             <p>
 
             ¿Que vas a pedir?:<br>
         
-            <input type="checkbox" name="asado"> Asado $400 <br>
+            <input type="checkbox" name="asado"> Asado $400  <select class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select> <br>
         
-            <input type="checkbox" name="chorizo"> Chorizo $120<br>
+            <input type="checkbox" name="chorizo"> Chorizo $120 <select class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option> <br>
         
-            <input type="checkbox" name="papas"> Papas Fritas $150 <br>
+            <input type="checkbox" name="papas"> Papas Fritas $150 <select class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option> <br>
 
-            <input type="checkbox" name="ensaladar"> Ensalada Rusa $150 <br>
+            <input type="checkbox" name="ensaladar"> Ensalada Rusa $150 <select class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option> <br>
 
-            <input type="checkbox" name="ensalada" > Ensalada mixta $120 
+            <input type="checkbox" name="ensalada" > Ensalada mixta $120 <select class="form-select" aria-label="Default select example">
+                <option selected>Cantidad</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option> <br>
         
             </p>
 
-          Total a pagar: 
+
+            <p>
+                ¿Te lo llevamos o lo pasas a buscar? <br>
+
+                <input type="checkbox" name="delivery"> Delivery
+                
+                <input type="checkbox" name="pickup"> Lo levanto ahi
+            </p>
+
+         <h2>Total a pagar:</h2>
+
+         <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Telefono" required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Direccion</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dirección" required>
+          </div>
         
-          <p><input type="submit" value="PAGAR"></p>
         </main>
 
    
-    <footer>¿Estas en el local y deseas abonar por la web?   <button>Pagar la cuenta</button></footer>
+    <footer><a href="../pages/envio.html"><button type="button" class="btn btn-secondary btn-lg">Enviar pedido por Whatsapp</button></a></footer>
 </div>
 </body>
 </html>
