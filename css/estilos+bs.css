@@ -1,3 +1,4 @@
+/* Aplicando estilos propios al bootstrap */            
 body{
     background: linear-gradient(rgb(0, 0, 0), rgb(252, 151, 56)) no-repeat center fixed;
     background-size: cover;
@@ -86,4 +87,37 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.infofooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*.card{
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    ;
+}
+
+select{
+    padding: 0.5rem;
+  }
+
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 0%;
+    padding-right: 0%;
 }
