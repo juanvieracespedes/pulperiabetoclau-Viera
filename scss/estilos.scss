@@ -1,58 +1,56 @@
+@import url(./_variables.scss);;
+
+
+@mixin alinear {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+}
+
+
 body{
     background: linear-gradient(rgb(0, 0, 0), rgb(252, 151, 56)) no-repeat center fixed;
-    background-size: cover;
-}
-.titulo {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    color: white;
-    text-shadow: -1px -1px 0 rgb(0, 0, 0),  
-     1px -1px 0 rgb(0, 0, 0),
-    -1px 1px 0 rgb(0, 0, 0),
-    1px 1px 0 rgb(0, 0, 0);
+    background-size: cover; 
+    
+    header{
+        .titulo {
+        
+           @include alinear();
+            font-size: 40px;
+            color: white;
+            text-shadow: $sombra;
+        }
+        .logo{
+        width: 200px;
+        height: 200px;
+        }
+    
+        .fondologo {
+        background-color: black;
+        @include alinear();
+        }
+    }
+
 }
 
-.logo{
-    width: 200px;
-    height: 200px;
-}
-
-.fondologo {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .conteinerCent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include alinear();
 }
 
 .CentroIndex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include alinear();
 
 }
 
 .frase{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include alinear();
     font-size: 20 px;
-    text-shadow: -1px -1px 0 rgb(0, 0, 0),  
-     1px -1px 0 rgb(0, 0, 0),
-    -1px 1px 0 rgb(0, 0, 0),
-    1px 1px 0 rgb(0, 0, 0);
+    text-shadow: $sombra;
 }
 
 .BotonPedido{
-    display: flex;
-    justify-content: center;
-    align-items: center;;
+    @include alinear();
 
 }
 p{
@@ -83,22 +81,16 @@ p{
 }
 
 .carrusel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include alinear();
 }
 
 .infofooter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include alinear();;
     text-align: center;
 }
 
 .Mapa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include alinear();
 }
 
 *.card{
@@ -113,9 +105,7 @@ select{
   }
 
 .final{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include alinear();
     padding-top: 100px;
     padding-left: 0%;
     padding-right: 0%;

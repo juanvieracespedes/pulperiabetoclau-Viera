@@ -17,9 +17,6 @@
   "bugs": {
     "url": "https://github.com/juanvieracespedes/ProyectoParrillaViera/issues"
   },
-  "homepage": "https://github.com/juanvieracespedes/ProyectoParrillaViera#readme",
-  "dependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19"
-  }
+  "homepage": "https://github.com/juanvieracespedes/ProyectoParrillaViera#readme"
 }
+
