@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgb(0, 0, 0), rgb(252, 151, 56)) no-repeat center fixed;
+  background-color: black;
   background-size: cover;
 }
 body header .titulo {
@@ -53,6 +53,7 @@ p {
 
 .nav-link:hover {
   background-color: chocolate;
+  margin-bottom: 50px;
 }
 
 .imagen-index {
@@ -109,3 +110,6 @@ select {
   padding-left: 0%;
   padding-right: 0%;
 }/*# sourceMappingURL=estilos.css.map */
+
+
+
